@@ -15,11 +15,11 @@ if (len(sys.argv) < 2): #se Faltar a passagem de argumentos:
     print("Host Discover --help")
     print("Sintaxe: {} [ip]" .format(sys.argv[0]))
     print("Ex: {} {}".format(sys.argv[0],"192.168.1.1"))
-elif (len(sys.argv[1]) == "--help"): #se o usuario usar o --help
+elif (str("{}".format(sys.argv[1])) == "--help"): #se o usuario usar o --help
     print("Host Discover --help")
     print("Sintaxe: {} [ip]" .format(sys.argv[0]))
     print("Ex: {} {}".format(sys.argv[0],"192.168.1.1"))
-elif (len(sys.argv[1]) == "-h"): #se o usuario usar o -h
+elif (str("{}".format(sys.argv[1])) == "-h"): #se o usuario usar o -h
     print("Host Discover --help")
     print("Sintaxe: {} [ip]" .format(sys.argv[0]))
     print("Ex: {} {}".format(sys.argv[0],"192.168.1.1"))
